@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('./fonts/Technology.ttf'); 
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  background: #19244D;
+  padding-top: 50px;
+}
+
+.scorecard {
+  width: 800px;
+  background: #19244D;
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 0 0 40px 5px #9cd08f;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.team {
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  color: #F5F5F5;
+  font-size: 48px;
+}
+
+#home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  width: 180px;
+  height: 120px;
+  font-family: 'Digital-7', sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 96px;
+  padding: 15px 0 0 0;
+  background: #0A0001;
+  color: #F94F6D;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+#guest-score {
+  color: #9cd08f;
+}
+
+.controls {
+  width: 50px;
+  height: 50px;
+  font-family: 'Digital-7', sans-serif;
+  font-size: 20px;
+  margin: 35px 3px 20px 3px;
+  background: #19244D;
+  color: #F5F5F5;
+  border-radius: 4px;
+  border: 1px solid #F5F5F5;
+  box-sizing: border-box;
+}
+
+.controls:hover {
+  background: #9cd08f;
+  color: #19244D;
+  cursor: pointer;}
+
+#reset {
+  width: 120px;
+  font-size: 24px;
+  background: #fe5f55;
+  border: none;
+}
+
+#reset:hover {
+  background: #f94f6d;
+  cursor: pointer;
+}
+
+.flash-red {
+  animation: glow-red 1s ease;
+}
+
+.flash-green {
+  animation: glow-green 1s ease;
+}
+
+@keyframes glow-red {
+  0% {
+    box-shadow: 0 0 0px transparent;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #f94f6d;
+  }
+  100% {
+    box-shadow: 0 0 0px transparent;
+  }
+}
+
+@keyframes glow-green {
+  0% {
+    box-shadow: 0 0 0px transparent;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #9cd08f;
+  }
+  100% {
+    box-shadow: 0 0 0px transparent;
+  }
+}
