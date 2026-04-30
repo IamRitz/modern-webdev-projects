@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+
+    <div class="toggle-dark">
+      <input type="checkbox" id="toggle-dark" />
+      <label for="toggle-dark" class="switch">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="container">
+      <div>
+        <div class="header">
+          <!-- Title -->
+          <h1 class="title">Generate a <br/>
+            <span id="title-g">random password</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="pass-info">Never use an insecure password again.</p>
+
+          <!-- Options [TODO] --> 
+          <!-- <div class="options"> -->
+          <!--   <label for="length">Password Length:</label> -->
+          <!--   <input type="number" id="length" name="length" min="8" max="32" value="15"> -->
+          <!--   <br /> -->
+          <!--   <label for="include-uppercase">Include Uppercase:</label> -->
+          <!--   <input type="checkbox" id="include-uppercase" name="include-uppercase" checked> -->
+          <!--   <br /> -->
+          <!--   <label for="include-lowercase">Include Lowercase:</label> -->
+          <!--   <input type="checkbox" id="include-lowercase" name="include-lowercase" checked> -->
+          <!--   <br /> -->
+          <!--   <label for="include-numbers">Include Numbers:</label> -->
+          <!--   <input type="checkbox" id="include-numbers" name="include-numbers" checked> -->
+          <!-- </div> -->
+
+          <!-- Generate Button -->
+          <button id="btn">Generate Passwords</button>
+        </div>
+        <div class="passwords">
+          <div class="password" id="password1"></div>
+          <div class="password" id="password2"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

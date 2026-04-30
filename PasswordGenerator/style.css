@@ -1,0 +1,148 @@
+
+body {
+  margin: 0;
+  background: #1C1C1C;
+  font-family: "Inter", sans-serif; 
+}
+
+.container {
+  margin: 50px auto;
+  width: 600px;
+  padding: 50px;
+  background: #1F2937;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #4ADF86;
+  transition: background 0.3s ease;
+}
+
+.header {
+  padding: 40px 0;
+  border-bottom: 1px solid #2F3E53;
+}
+
+.title {
+  margin-top:0;
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#title-g {
+  color: #4ADF86; 
+}
+
+.pass-info {
+  font-size: 20px;
+  margin-top: 0;
+  color: #BDBDBD;
+}
+
+#btn {
+  margin-top: 20px;
+  font-size: 16px;
+  width: 200px;
+  background: #4ADF86; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#btn:hover {
+  background: #3CB371; 
+  cursor: pointer;
+}
+
+.passwords {
+  display: flex;
+  justify-content: space-between;
+}
+
+.password {
+  margin-top: 35px;
+  width: 280px;
+  height: 48px;
+  color: #4ADF86;
+  background: #273549;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.copied {
+  color: #3CB371;
+}
+
+.toggle-dark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-dark input {
+  display: none; /* hide checkbox */
+}
+
+.switch {
+  width: 50px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.slider {
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+/* when checked */
+#toggle-dark:checked + .switch {
+  background: #4caf50;
+}
+
+#toggle-dark:checked + .switch .slider {
+  transform: translateX(24px);
+}
+
+
+
+.container.light {
+  background: #ECFDF5; /* light mode */
+  box-shadow: 0 0 10px #4caf50;
+}
+
+/* title inside container */
+.container.light .title {
+  color: #2B283A;
+}
+
+/* paragraph with class pass-info */
+.container.light .pass-info {
+  color: #6B7280;
+}
+
+.container.light .header {
+  border-bottom: 1px solid #D5D4D8;;
+}
+
+body.light-body {
+  background: #D1D5DB;
+}
